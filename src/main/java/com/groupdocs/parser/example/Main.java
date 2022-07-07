@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 
 public class Main {
     public static void main(String[] args) {
-        Path InputFilePath = Paths.get("D:\\ASPOSE\\SampleFiles\\invoice_pages.pdf");
+        Path InputFilePath = Paths.get("D:\\ASPOSE\\SampleFiles\\SampleWithImages.docx");
         Path OutputPath = Paths.get("D:\\ASPOSE\\OutFiles\\");
 
         // Verify if input file exists and is not a directory
@@ -23,7 +23,7 @@ public class Main {
         try (Parser parser = new Parser(InputFilePath.toString())) {
             // Extract images
             Iterable<PageImageArea> images = parser.getImages();
-            // Check if images extraction is supported
+            // Verify if images extraction is supported
             if (images == null) {
                 System.out.println("Images extraction is not supported.");
                 return;
