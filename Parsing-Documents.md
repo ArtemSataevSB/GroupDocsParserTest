@@ -1,6 +1,7 @@
 # Parsing documents with GroupDocs.Parser
-## About
+
 Retrieving data from documents is one of the most essential tasks when processing documents programmatically. The complexity of this task depends significantly on the format of the original document. Plain-text or comma-separated files are relatively simple to handle in almost any programming language. Whereas, PDF, word processing or spreadsheets would, most likely, require special third-party libraries which simplify working with these formats.    
+
 Most of the free or commercial libraries typically support one or only a few document formats. Some work with PDF only (PDFBox, JPedal), others work with word processing documents only (Spire.Doc, JODF) and so on. To support a broader range of formats, you either have to combine several libraries or use enterprise-level libraries (Spire.Office, GroupDocs).      
   
 ## Why GroupDocs.Parser?
