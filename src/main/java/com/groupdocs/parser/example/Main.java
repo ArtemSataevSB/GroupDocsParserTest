@@ -32,7 +32,7 @@ public class Main {
             try {
                 Files.createDirectories(OutputPath);
             } catch (IOException e) {
-                System.err.println("Failed to create directory." + e.getMessage());
+                System.err.println("Failed to create a directory." + e.getMessage());
                 return;
             }
             int imageCounter = 0;
@@ -43,7 +43,7 @@ public class Main {
                 image.save(String.format("%s\\img%d%s", OutputPath, imageCounter, image.getFileType().getExtension()));
                 imageCounter++;
             }
-            System.out.printf("Extracted %d images to directory %s.%n", imageCounter, OutputPath);
+            System.out.printf("Extracted %d images to the directory %s.%n", imageCounter, OutputPath);
         }
     }
 }
